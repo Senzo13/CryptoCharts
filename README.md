@@ -2,7 +2,7 @@
 
 <div align="center" style="text-align:center">
 
-<img src="frontend/cryptoProject.png.gif" alt="Gif"/>
+<img src="frontend/cryptoProject.png" alt=""/>
 </div>
 
 Ce projet a été créé pour afficher les données de cryptomonnaies en temps réel à l'aide de graphiques ApexChart. Le projet utilise les technologies suivantes :
