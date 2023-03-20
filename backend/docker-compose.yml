@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:latest
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_USER
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_PASSWORD
+      - MONGO_INITDB_DATABASE=$MONGO_DB
+    ports:
+      - $MONGO_LOCAL_PORT:$MONGO_DOCKER_PORT
+    volumes:
+      - db:/data/db
+  # app:
+  #   depends_on:
+  #     - mongodb
+  #   build: .
+  #   restart: unless-stopped
+  #   env_file: ./.env
+  #   ports:
+  #     - $APP_PORT:$APP_PORT
+  #   environment:
+  #     - MONGO_HOST=mongodb
+  #     - MONGO_USER=$MONGO_USER
+  #     - MONGO_PASSWORD=$MONGO_PASSWORD
+  #     - MONGO_DB=$MONGO_DB
+  #     - DB_PORT=$MONGO_DOCKER_PORT
+  #   stdin_open: true
+  #   tty: true
+
+volumes:
+  db:

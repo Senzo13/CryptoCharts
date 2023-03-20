@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\requests\reset_password.test.ts">
+  </file>
+  <file path="C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\requests\login.test.ts">
+  </file>
+  <file path="C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\requests\register.test.ts">
+  </file>
+  <file path="C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\models\cryptocurrency.model.test.ts">
+    <testCase name="testing cryptocurrency model When creating a new cryptocurrency, it should send the right object" duration="10"/>
+  </file>
+  <file path="C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\models\user.model.test.ts">
+    <testCase name="testing user model When creating a new userModel, it should send the expected object" duration="8"/>
+  </file>
+  <file path="C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\requests\healthCheck.test.ts">
+    <testCase name="Testing healthcheck route should return a status 200 and json response with a message equal to pong " duration="30051">
+      <failure message="Error: listen EADDRINUSE: address already in use :::8080"><![CDATA[Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1485:16)
+    at listenInCluster (node:net:1533:12)
+    at Server.listen (node:net:1621:7)
+    at Object.<anonymous> (C:\Users\lahce\Desktop\epitech2023\crypto-back\src\app.ts:36:4)
+    at Runtime._execModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:1377:24)
+    at Runtime._loadModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:989:12)
+    at Runtime.requireModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:849:12)
+    at Runtime.requireModuleOrMock (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:1009:21)
+    at Object.<anonymous> (C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\requests\healthCheck.test.ts:3:1)
+    at Runtime._execModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:1377:24)
+    at Runtime._loadModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:989:12)
+    at Runtime.requireModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:849:12)
+    at jestAdapter (C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runTestInternal (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+      <failure message="MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you&apos;re trying to access the database from an IP that isn&apos;t whitelisted. Make sure your current IP address is on your Atlas cluster&apos;s IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/"><![CDATA[MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at NativeConnection.Object.<anonymous>.Connection.openUri (C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\mongoose\lib\connection.js:824:32)
+    at C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\mongoose\lib\index.js:412:10
+    at C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose.Object.<anonymous>.Mongoose._promiseOrCallback (C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\mongoose\lib\index.js:1265:10)
+    at Mongoose.Object.<anonymous>.Mongoose.connect (C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\mongoose\lib\index.js:411:20)
+    at db (C:\Users\lahce\Desktop\epitech2023\crypto-back\src\config\DataBase\mongodb.ts:9:19)
+    at Object.<anonymous> (C:\Users\lahce\Desktop\epitech2023\crypto-back\src\app.ts:13:3)
+    at Runtime._execModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:1377:24)
+    at Runtime._loadModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:989:12)
+    at Runtime.requireModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:849:12)
+    at Runtime.requireModuleOrMock (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:1009:21)
+    at Object.<anonymous> (C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\requests\healthCheck.test.ts:3:1)
+    at Runtime._execModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:1377:24)
+    at Runtime._loadModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:989:12)
+    at Runtime.requireModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:849:12)
+    at jestAdapter (C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runTestInternal (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+      <failure message="Error: thrown: &quot;Exceeded timeout of 30000 ms for a hook."><![CDATA[Error: thrown: "Exceeded timeout of 30000 ms for a hook.
+Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+    at Object.<anonymous> (C:\Users\lahce\Desktop\epitech2023\crypto-back\__tests__\requests\healthCheck.test.ts:4:1)
+    at Runtime._execModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:1377:24)
+    at Runtime._loadModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:989:12)
+    at Runtime.requireModule (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runtime\build\index.js:849:12)
+    at jestAdapter (C:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runTestInternal (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (c:\Users\lahce\Desktop\epitech2023\crypto-back\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+  </file>
+</testExecutions>
